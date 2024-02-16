@@ -293,53 +293,15 @@ function logoClickHandler(logoName) {
 }
 
 })()
-$(document).ready(function() {
-  var companyName = [
-      'Eurocontrol',
-      'Volocopter',
-      'Venavi',
-      'aena',
-      'Groupe ADP',
-      'Milan Airports',
-      'Alliance for New Mobility Europe',
-      'DLR',
-      'd-flight',
-      'Pipistrel',
-      'Leanardo',
-      'indra',
-      'DSNA',
-      'ENAC',
-      'Boeing',
-      'Lilium',
-      'ANRA',
-      'deepblue',
-      'DRONIQ',
-      'UNIFLY',
-      'ABIONICA',
-      'bluenest',
-      'ineco',
-      'UNISPHERE',
-      'ENAIRE',
-      'HOLOGARDE',
-      'Soul Software',
-      'Aeroporti di Roma',
-      'URBAN-VB',
-      'nois',
-      'v technology',
-      'CRIDA'
+const scrollContent = document.querySelector('.scroll-content');
+const contentItems = document.querySelectorAll('.content-item');
 
-      
-  ];
-  var companyInfo = [
-      'Information about company 1',
-      'Information about company 2',
-      
-  ];
-  $('[data-bs-toggle="modal"]').click(function() {
-    var logoNum = $(this).data('logo'); // Get the logo number
-    console.log('Logo number:', logoNum); // will log the number of clicked logo
-    console.log('Company info:', companyInfo[logoNum - 1]); // will log corresponding company info
-    $('#modalTitle').text(companyName[logoNum - 1]); 
-    $('#modalBody').text(companyInfo[logoNum - 1]); // -1 Because arrays start at index 0
+let itemWidth = contentItems[0].offsetWidth ; // Assuming 20px padding on both sides
+
+document.querySelector('.prev-btn').addEventListener('click', () => {
+    scrollContent.scrollBy({ left: -itemWidth, behavior: 'smooth' });
 });
+
+document.querySelector('.next-btn').addEventListener('click', () => {
+    scrollContent.scrollBy({ left: itemWidth, behavior: 'smooth' });
 });

@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -47,17 +48,22 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li class="dropdown"><a href="#"><span>What is EUREKA</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Solution 1</a></li>
-              <li><a href="#">Solution 2</a></li>
-              <li><a href="#">Solution 3</a></li>
-              <li><a href="#">Solution 4</a></li>
+              <li><a href="#" data-target="#collapseOne">Arrival and Departures from a Vertiport Including Route and Trajectory</a></li>
+              <li><a href="#" data-target="#collapseTwo">Vertiport Collaborative Traffic Management</a></li>
+              <li><a href="#" data-target="#collapseThree">Vertiport Disruption and Emergency Management</a></li>
+              <li><a href="#" data-target="#collapseFour">Vertiport Network Flow, Capacity & Operational Management</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#partners">Partners</a></li>
-          <li><a class="nav-link   scrollto" href="#advisory-board">Advisory Board</a></li>
+          <!-- <li><a class="nav-link   scrollto" href="#advisory-board">Advisory Board</a></li> -->
           <li><a class="nav-link scrollto" href="#news">News</a></li>
           <li><a class="nav-link scrollto" href="#newsletter">Newsletter</a></li>
+          <li><a class="nav-link scrollto" href="#events&presentations">Events & Presentations</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <div class="col d-flex justify-content-end">
+            <a href="https://www.sesarju.eu/" target="_blank">
+              <img src="assets/img/eureka-specific/SESARJU_Logo_Color.png" alt="Logo 14" class="sesar-logo img-fluid">
+            </a>          </div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -71,341 +77,468 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>EUREKA</h1>
-          <h2>"Descriptive Sentence"</h2>
+          <!-- <h1>EUREKA</h1> -->
+          <h2>Integrating Vertiports</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">More Information</a>
             <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
           </div>
         </div>
-        <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200"> -->
+
+        <div class="col-lg-6 order-1 order-lg-2 " data-aos="fade-up" data-aos-delay="200">
+          <div class="news-teaser">
+            <h3>Latest News</h3>
+            <ul>
+                <li><a href="#news">Handover Project Lead - Iliyana Simeonova</a></li>
+                <li><a href="#news">CANSO Exhibition</a></li>
+                <li><a href="#news">Airspace World</a></li>
+            </ul>
+            <a href="#news" class="btn-more-info">More Information</a>
+        </div>
+        
           <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="https://www.juicer.io/embed/97034653/embed-code.js?data-pages="1"" async defer></script>
 
   </section><!-- End Hero -->
+  
   <main id="main">
+    <!-- <div class='sk-ww-linkedin-page-post' data-embed-id='25350509'></div><script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script> -->
+   <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('a[data-target]').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            const targetId = this.getAttribute('data-target'); // Get the target ID
+            const targetElement = document.querySelector(targetId); // Select the target element
+
+            // Check if the target element is a collapse component and toggle it
+            if (!targetElement.classList.contains('show')) {
+              var bsCollapse = new bootstrap.Collapse(targetElement, {
+                toggle: true
+              });
+            }
+
+            setTimeout(() => {
+              // Calculate offset position
+              const headerOffset = 450; // Change this value to match the height of your fixed header or any other required offset
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+              // Scroll to the offset position
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }, 0); // Adjust timeout as needed, depending on the duration of your collapse transition
+          });
+        });
+      });
+      </script>
+
+ 
+
 
     <!-- ======= Partners Section ======= -->
-     <section id="clients" class="clients section-bg"> 
+     <section id="partner-carousel" class="partner-carousel section-bg">
       <div class="logo-carousel-container">
-      
+
         <div class="logo-carousel" data-aos="slide-left">
-      
+
           <div >
-      
-            <img src="assets/img/partners/logo_1.png" class="img-fluid" alt="">
+
+            <img src="assets/img/new_partners/logo_1.png" class="img-fluid" alt="">
           </div>
           <div >
-      
-            <img src="assets/img/partners/logo_2.png" class="img-fluid" alt="">
+
+            <img src="assets/img/new_partners/logo_2.png" class="img-fluid" alt="">
           </div>
-      
-      
+
+
           <div >
-            <img src="assets/img/partners/logo_3.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_3.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_4.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_4.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_5.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_5.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_6.jpg" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_7.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_7.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_8.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_8.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_9.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_9.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_10.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_10.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_11.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_11.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_12.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_12.png" class="img-fluid" alt="">
           </div>
-      
+
           <div >
-            <img src="assets/img/partners/logo_13.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_13.png" class="img-fluid" alt="">
           </div>
- 
+
           <div >
-            <img src="assets/img/partners/logo_14.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_14.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_15.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_15.png" class="img-fluid" alt="">
           </div>
-           
+
           <div>
-            <img src="assets/img/partners/logo_16.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_16.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
 
-            <img src="assets/img/partners/logo_17.jpg" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_17.jpg" class="img-fluid" alt="">
           </div>
-      
+
           <div>
 
-            <img src="assets/img/partners/logo_18.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_18.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
 
-            <img src="assets/img/partners/logo_19.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_19.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_20.jpg" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_20.jpg" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_21.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_21.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_22.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_22.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_23.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_23.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_24.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_24.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_26.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_26.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_27.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_27.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_28.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_28.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_29.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_29.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_30.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_30.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_31.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_31.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_33.png" class="img-fluid" alt="">
+            <img src="assets/img/new_partners/logo_33.png" class="img-fluid" alt="">
           </div>
-      
+
           <div>
-            <img src="assets/img/partners/logo_34.png" class="img-fluid" alt="">
-          </div> 
-      
+            <img src="assets/img/new_partners/logo_34.png" class="img-fluid" alt="">
+          </div>
+
         </div>
       </div>
 
     </section><!-- End Partners Section -->
 
     <!-- ======= What is EUREKA Section ======= -->
-    <section id="about" class="about">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>What is EUREKA</h2>
+        <h2>About Us</h2>
+        <p>Learn More About The EUREKA Project</p>
       </div>
-      <div class="container">
-        <div class="row">
-            <!-- Column for the containers -->
-            <div id="accordion" class="col-md-6 ">
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button id="solution-btn" class="btn btn-light btn-block collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Solution 1
-                        <i class="fas fa-plus collapse-icon"></i>                      
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
+  
+      <div id="solutions-details" class="accordion section-bg">
+        <!-- Solution 1 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+              Integrating Vertiports into Urban Landscapes
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne">
+            <div class="accordion-body row">
+              <div class="col-lg-6">
+                <img src="assets/img/solutions/solution-1.jpg" class="img-fluid" alt="Solution 1">
               </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button id="solution-btn" class="btn btn-light btn-block collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Solution 2
-                      <i class="fas fa-plus collapse-icon"></i>
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button id="solution-btn" class="btn btn-light btn-block  collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Solution 3
-                      <i class="fas fa-plus collapse-icon"></i>
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button id="solution-btn" class="btn btn-light btn-block  collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Solution 4
-                      <i class="fas fa-plus collapse-icon"></i>
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md-6 grid-container">
-              <div class="grid-item">
-                <h2>Solution 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-                <a href="#about" class="btn-get-started scrollto">More Information</a>
-              </div>
-              <div class="grid-item">
-                <h2>Solution 2</h2>
-                <p>Phasellus non dolor nibh. Vestibulum lacinia eros id ante tincidunt tempus.</p>
-                <a href="#about" class="btn-get-started scrollto">More Information</a>
-              </div>
-              <div class="grid-item">
-                <h2>Solution 3</h2>
-                <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                <a href="#about" class="btn-get-started scrollto">More Information</a>
-              </div>
-              <div class="grid-item">
-                <h2>Solution 4</h2>
-                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
-                <a href="#about" class="btn-get-started scrollto">More Information</a>
-              </div> 
-            </div> -->
-
-            <!-- Column for the image -->
-            <div class="col-md-6">
-              <img class="img-fluid" src="assets/img/eureka-specific/whatiseureka.jpg" data-aos="zoom-in"
-              data-aos-delay="150">&nbsp;            
-        </div>
-    </div>
-
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="partners" class="partners section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Partners</h2>
-        </div>
-        <div class="temporary text">
-          <p>
-            This page wil include information about the partners such as: name, website, logo, self description.
-          </p>
-        </div>
-        <div class="logo-container">
-          <!-- Replace 'path_to_logo1.png' with the actual path to your logo image -->
-          <img src="assets/img/partners/logo_1.png" Logo 1" class="img-fluid logo"  data-bs-toggle="modal" data-logo="1" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_2.png" Logo 2" class="logo img-fluid" data-bs-toggle="modal" data-logo="2"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_3.png" Logo 3" class="logo img-fluid" data-bs-toggle="modal" data-logo="3"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_4.png" Logo 4" class="logo img-fluid" data-bs-toggle="modal" data-logo="4"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_5.png" Logo 5" class="logo img-fluid" data-bs-toggle="modal" data-logo="5"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_6.jpg" Logo 6" class="logo img-fluid" data-bs-toggle="modal" data-logo="6"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_7.png" Logo 7" class="logo img-fluid" data-bs-toggle="modal" data-logo="7"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_8.png" Logo 8" class="logo img-fluid" data-bs-toggle="modal" data-logo="8"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_9.png" Logo 9" class="logo img-fluid" data-bs-toggle="modal" data-logo="9"data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_10.png" Logo 10" class="logo img-fluid" data-bs-toggle="modal" data-logo="10" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_11.png" Logo 11" class="logo img-fluid" data-bs-toggle="modal" data-logo="11" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_12.png" Logo 12" class="logo img-fluid" data-bs-toggle="modal" data-logo="12" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_13.jpg" Logo 13" class="logo img-fluid" data-bs-toggle="modal" data-logo="13" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_14.png" Logo 14" class="logo img-fluid" data-bs-toggle="modal" data-logo="14" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_15.png" Logo 15" class="logo img-fluid" data-bs-toggle="modal" data-logo="15" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_16.png" Logo 16" class="logo img-fluid" data-bs-toggle="modal" data-logo="16" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_17.jpg" Logo 17" class="logo img-fluid" data-bs-toggle="modal" data-logo="17" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_18.png" Logo 18" class="logo img-fluid" data-bs-toggle="modal" data-logo="18" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_19.png" Logo 19" class="logo img-fluid" data-bs-toggle="modal" data-logo="19" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_20.jpg" Logo 20" class="logo img-fluid" data-bs-toggle="modal" data-logo="20" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_21.png" Logo 21" class="logo img-fluid" data-bs-toggle="modal" data-logo="21" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_22.png" Logo 22" class="logo img-fluid" data-bs-toggle="modal" data-logo="22" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_23.png" Logo 23" class="logo img-fluid" data-bs-toggle="modal" data-logo="23" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_24.png" Logo 24" class="logo img-fluid" data-bs-toggle="modal" data-logo="24" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_26.png" Logo 26" class="logo img-fluid" data-bs-toggle="modal" data-logo="26" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_27.png" Logo 27" class="logo img-fluid" data-bs-toggle="modal" data-logo="27" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_28.png" Logo 28" class="logo img-fluid" data-bs-toggle="modal" data-logo="28" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_29.png" Logo 29" class="logo img-fluid" data-bs-toggle="modal" data-logo="29" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_30.png" Logo 30" class="logo img-fluid" data-bs-toggle="modal" data-logo="30" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_31.png" Logo 31" class="logo img-fluid" data-bs-toggle="modal" data-logo="31" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_33.png" Logo 33" class="logo img-fluid" data-bs-toggle="modal" data-logo="33" data-bs-target="#generalModal">
-          <img src="assets/img/partners/logo_34.png" Logo 34" class="logo img-fluid" data-bs-toggle="modal" data-logo="34" data-bs-target="#generalModal">
-
-
-          <div class="modal fade" id="generalModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalTitle"></h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body" id="modalBody">
-                  <!-- Content Here -->
-                </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <p>
+                  The foundational aspect of Innovative Air Mobility (IAM) infrastructure involves the integration of vertiports into both urban landscapes and the airspace. These vertiports are designed to accommodate various use cases and traffic volumes, demanding adaptable ground and airspace design recommendations, processes, and procedures. For effective operation within U-space, a shared real-time operating status of vertiports among all users is crucial, affecting all phases of IAM flights. This integration necessitates the inclusion of vertiports as essential stakeholders in the U-space Concept of Operations and the U-space Regulatory Framework. The EUREKA project, as a pioneering initiative under SESAR, extends the U-space regulatory framework to encapsulate vertiport stakeholders. It focuses on developing performance-based requirements for approach, departure, and en-route procedures specifically tailored to crewed VTOL-capable aircraft (VCA), covering a spectrum from immediate segregated crewed VCA operations to long-term strategies for fully integrated (un)crewed VCA operations.
+                </p>
               </div>
             </div>
           </div>
         </div>
+  
+        <!-- Solution 2 -->
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+              Vertiport Collaborative Traffic Management
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body row">
+              <div class="col-lg-6">
+                <img src="assets/img/solutions/solution-2.jpg" class="img-fluid" alt="Solution 2">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <p >
+                  The Vertiport Collaborative Traffic Management system introduced by EUREKA acts as the central management system for IAM traffic at vertiports. By centralizing critical airside ground information such as availability, schedules, and capacity constraints, V-CTM contributes to creating a comprehensive operational picture. This system is pivotal for managing both the vertiport environment and extending its capabilities to address the U-space airspace's capacity constraints through the Corridor Management service of the CIS platform. This enhancement is geared towards maintaining operational efficiency and safety, ensuring a smooth integration with the broader U-space ecosystem.                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+              Vertiport Disruption and Emergency Management
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body row">
+              <div class="col-lg-6">
+                <img src="assets/img/solutions/solution-2.jpg" class="img-fluid" alt="Solution 3">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <p >
+                  Recognizing the potential for disturbances and emergencies within the vertiport environment, EUREKA has developed strategies to address challenges such as disruptive UAS (both cooperative and non-cooperative) and crewed VCAs in a contingency flight plan (CFP) state. These strategies involve tactical changes in U-space airspace configuration to manage such disturbances effectively. The development of Letters of Agreement and Route Operating Documents is also part of this solution, facilitating future operations and ensuring a resilient response to emergencies and disruptions within the vertiport environment.         </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+              Vertiport Network Flow, Capacity & Operational Management
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body row">
+              <div class="col-lg-6">
+                <img src="assets/img/solutions/solution-2.jpg" class="img-fluid" alt="Solution 4">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <p >
+                  To enhance the efficiency and operational coordination of multiple vertiports, EUREKA introduces the Vertiport Network Manager (V-NM). This role is crucial for monitoring and managing multiple vertiports across an urban network, whether located in controlled or uncontrolled airspace or co-located with airports. The V-NM ensures the seamless interaction between vertiports, contributing to the overall efficiency of the ATM processes and airport throughput, and plays a critical role in maintaining the safety, efficiency, and sustainability of the IAM vertiport ecosystem in diverse airspace classes.
+                  Together, these solutions contribute to advancing the state of the art for (un)crewed VCAs and establishing vertiports as integral components of U-space and future IAM transportation networks, highlighting EUREKA's mission towards a safe, efficient, and sustainable IAM vertiport ecosystem.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat for Solution 3 and Solution 4 with their respective content -->
+  
+      </div>
+    </div>
+  </section>
+  
+<!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="partners" class="partners section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-title">
+          <div class="row">
+            <!-- Column for the title -->
+            <div class="col text-center">
+              <h2>Partners</h2>
+            </div>
+
+            <!-- Column for the logo -->
+
+          </div>
+        </div>
+
+        <div class="logo-container">
+          <a href="https://www.eurocontrol.int/" target="_blank">
+            <img src="assets/img/new_partners/logo_1.png" alt="Logo 1" class="logo img-fluid">
+          </a>
+          <a href="https://www.volocopter.com/en" target="_blank">
+            <img src="assets/img/new_partners/logo_2.png" alt="Logo 2" class="logo img-fluid">
+          </a>
+          <a href="https://www.enav.it/en" target="_blank">
+            <img src="assets/img/new_partners/logo_3.png" alt="Logo 3" class="logo img-fluid">
+          </a>
+
+          <a href="https://www.aena.es target="_blank">
+            <img src="assets/img/new_partners/logo_4.png" alt="Logo 4" class="logo img-fluid">
+          </a>
+          <a href="https://www.parisaeroport.fr/en" target="_blank">
+            <img src="assets/img/new_partners/logo_5.png" alt="Logo 5" class="logo img-fluid">
+          </a>
+          <a href="https://www.milanairports.com/en" target="_blank">
+            <img src="assets/img/new_partners/logo_6.jpg" alt="Logo 6" class="logo img-fluid">
+          </a>
+          <a href="https://mobilityalliance.eu/" target="_blank">
+            <img src="assets/img/new_partners/logo_7.png" alt="Logo 7" class="logo img-fluid">
+          </a>
+          <a href="https://www.dlr.de/en" target="_blank">
+            <img src="assets/img/new_partners/logo_8.png" alt="Logo 8" class="logo img-fluid">
+          </a>
+          <a href="https://www.d-flight.it/web-app/" target="_blank">
+            <img src="assets/img/new_partners/logo_9.png" alt="Logo 9" class="logo img-fluid">
+          </a>
+          <a href="https://www.pipistrel-aircraft.com/" target="_blank">
+            <img src="assets/img/new_partners/logo_10.png" alt="Logo 10" class="logo img-fluid">
+          </a>
+          <a href="https://www.leonardo.com/en/home" target="_blank">
+            <img src="assets/img/new_partners/logo_11.png" alt="Logo 11" class="logo img-fluid">
+          </a>
+          <a href="https://www.indracompany.com/en/" target="_blank">
+            <img src="assets/img/new_partners/logo_12.png" alt="Logo 12" class="logo img-fluid">
+          </a>
+          <a href="https://dsna.fr/" target="_blank">
+            <img src="assets/img/new_partners/logo_13.jpg" alt="Logo 13" class="logo img-fluid">
+          </a>
+          <a href="https://www.enac.fr/en" target="_blank">
+            <img src="assets/img/new_partners/logo_14.png" alt="Logo 14" class="logo img-fluid">
+          </a>
+          <a href="https://www.boeing.com/" target="_blank">
+            <img src="assets/img/new_partners/logo_15.png" alt="Logo 15" class="logo img-fluid">
+          </a>
+          <a href="https://lilium.com/" target="_blank">
+            <img src="assets/img/new_partners/logo_16.png" alt="Logo 16" class="logo img-fluid">
+          </a>
+          <a href="https://www.anratechnologies.com/home/" target="_blank">
+            <img src="assets/img/new_partners/logo_17.jpg" alt="Logo 17" class="logo img-fluid">
+          </a>
+          <a href="https://dblue.it/en/" target="_blank">
+            <img src="assets/img/new_partners/logo_18.png" alt="Logo 18" class="logo img-fluid">
+          </a>
+          <a href="https://droniq.de/en/" target="_blank">
+            <img src="assets/img/new_partners/logo_19.png" alt="Logo 19" class="logo img-fluid">
+          </a>
+          <a href="https://www.unifly.aero/" target="_blank">
+            <img src="assets/img/new_partners/logo_21.png" alt="Logo 21" class="logo img-fluid">
+          </a>
+          <a href="https://abionica.com/?lang=en" target="_blank">
+            <img src="assets/img/new_partners/logo_22.png" alt="Logo 22" class="logo img-fluid">
+          </a>
+          <a href="https://www.bluenest.io/ target="_blank">
+            <img src="assets/img/new_partners/logo_23.png" alt="Logo 23" class="logo img-fluid">
+          </a>
+          <a href="https://www.ineco.com/ineco/en" target="_blank">
+            <img src="assets/img/new_partners/logo_20.jpg" alt="Logo 20" class="logo img-fluid">
+          </a>
+          <a href="https://www.unisphere.de/" target="_blank">
+            <img src="assets/img/new_partners/logo_24.png" alt="Logo 24" class="logo img-fluid">
+          </a>
+          <a href="https://www.enaire.es/home" target="_blank">
+            <img src="assets/img/new_partners/logo_26.png" alt="Logo 26" class="logo img-fluid">
+          </a>
+          <a href="https://hologarde.com/" target="_blank">
+            <img src="assets/img/new_partners/logo_27.png" alt="Logo 27" class="logo img-fluid">
+          </a>
+          <a href="https://www.soulsoftware.it/html/en/homepage/" target="_blank">
+            <img src="assets/img/new_partners/logo_28.png" alt="Logo 28" class="logo img-fluid">
+          </a>
+          <a href="https://www.adr.it/" target="_blank">
+            <img src="assets/img/new_partners/logo_29.png" alt="Logo 29" class="logo img-fluid">
+          </a>
+          <a href="https://www.urbanv.com/en/" target="_blank">
+            <img src="assets/img/new_partners/logo_30.png" alt="Logo 30" class="logo img-fluid">
+          </a>
+          <a href="https://www.nais-solutions.it/" target="_blank">
+            <img src="assets/img/new_partners/logo_31.png" alt="Logo 31" class="logo img-fluid">
+          </a>
+          <a href="https://www.atc-network.com/atc-industry/techno-sky" target="_blank">
+            <img src="assets/img/new_partners/logo_33.png" alt="Logo 33" class="logo img-fluid">
+          </a>
+          <a href="https://crida.es/" target="_blank">
+            <img src="assets/img/new_partners/logo_34.png" alt="Logo 34" class="logo img-fluid">
+          </a>
+        </div>
+
+          <!-- <img src="assets/img/new_partners/logo_1.png" Logo 1" class="img-fluid logo"  href="https://google.com">
+          <img src="assets/img/new_partners/logo_2.png" Logo 2" class="logo img-fluid" data-bs-toggle="modal" data-logo="2"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_3.png" Logo 3" class="logo img-fluid" data-bs-toggle="modal" data-logo="3"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_4.png" Logo 4" class="logo img-fluid" data-bs-toggle="modal" data-logo="4"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_5.png" Logo 5" class="logo img-fluid" data-bs-toggle="modal" data-logo="5"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_6.jpg" Logo 6" class="logo img-fluid" data-bs-toggle="modal" data-logo="6"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_7.png" Logo 7" class="logo img-fluid" data-bs-toggle="modal" data-logo="7"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_8.png" Logo 8" class="logo img-fluid" data-bs-toggle="modal" data-logo="8"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_9.png" Logo 9" class="logo img-fluid" data-bs-toggle="modal" data-logo="9"data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_10.png" Logo 10" class="logo img-fluid" data-bs-toggle="modal" data-logo="10" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_11.png" Logo 11" class="logo img-fluid" data-bs-toggle="modal" data-logo="11" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_12.png" Logo 12" class="logo img-fluid" data-bs-toggle="modal" data-logo="12" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_13.jpg" Logo 13" class="logo img-fluid" data-bs-toggle="modal" data-logo="13" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_14.png" Logo 14" class="logo img-fluid" data-bs-toggle="modal" data-logo="14" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_15.png" Logo 15" class="logo img-fluid" data-bs-toggle="modal" data-logo="15" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_16.png" Logo 16" class="logo img-fluid" data-bs-toggle="modal" data-logo="16" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_17.jpg" Logo 17" class="logo img-fluid" data-bs-toggle="modal" data-logo="17" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_18.png" Logo 18" class="logo img-fluid" data-bs-toggle="modal" data-logo="18" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_19.png" Logo 19" class="logo img-fluid" data-bs-toggle="modal" data-logo="19" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_20.jpg" Logo 20" class="logo img-fluid" data-bs-toggle="modal" data-logo="20" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_21.png" Logo 21" class="logo img-fluid" data-bs-toggle="modal" data-logo="21" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_22.png" Logo 22" class="logo img-fluid" data-bs-toggle="modal" data-logo="22" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_23.png" Logo 23" class="logo img-fluid" data-bs-toggle="modal" data-logo="23" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_24.png" Logo 24" class="logo img-fluid" data-bs-toggle="modal" data-logo="24" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_26.png" Logo 26" class="logo img-fluid" data-bs-toggle="modal" data-logo="26" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_27.png" Logo 27" class="logo img-fluid" data-bs-toggle="modal" data-logo="27" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_28.png" Logo 28" class="logo img-fluid" data-bs-toggle="modal" data-logo="28" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_29.png" Logo 29" class="logo img-fluid" data-bs-toggle="modal" data-logo="29" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_30.png" Logo 30" class="logo img-fluid" data-bs-toggle="modal" data-logo="30" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_31.png" Logo 31" class="logo img-fluid" data-bs-toggle="modal" data-logo="31" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_33.png" Logo 33" class="logo img-fluid" data-bs-toggle="modal" data-logo="33" data-bs-target="#generalModal">
+          <img src="assets/img/new_partners/logo_34.png" Logo 34" class="logo img-fluid" data-bs-toggle="modal" data-logo="34" data-bs-target="#generalModal"> -->
+
+
 
           <!-- <img class="partners align-items-center d-flex img-fluid" src="assets/img/eureka-specific/partnerslide.jpg" data-aos="zoom-in" data-aos-delay="150">&nbsp; -->
-        </div>
+        <!-- </div> -->
 
       </div>
     </section><!-- End Why Us Section -->
 
     <!-- ======= Advisory Board Section ======= -->
-    <section id="advisory-board" class="advisory-board">
+    <!-- <section id="advisory-board" class="advisory-board">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Advisory Board</h2>
@@ -455,30 +588,34 @@
           </div>
         </div> -->
 
-      </div>
-    </section><!-- End Advisory Board Section -->
+      <!-- </div>
+    </section> -->
 
     <!-- ======= Services Section ======= -->
     <section id="news" class="news section-bg container" data-aos="fade-up">
       <div class="section-title news-container">
         <h2>Latest News</h2>
-
         <div class="news-item">
-            <h3>News Title 1</h3>
-            <p class="date">December 5, 2023</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <h3>Handover Project Lead - Iliyana Simeonova</h3>
+          <p class="date">February 15, 2024</p>
+          <p>On 1 February, EUREKA has gotten a new project leader: Ludovic Legros has left the project and instead, Iliyana Simeonova, job title at Eurocontrol has taken over as project leader.</p>
+        </div>
+        <div class="news-item">
+            <h3>CANSO Exhibition</h3>
+            <p class="date">February 15, 2024</p>
+            <p>From 19-22 February, CANSO is organizing in the European Parliament an exhibition on drones. The event is hosted by MEP Jan-Christoph Oetjen and will show how drones will innovate to shape our future skies. EUREKA will be present with several work package leaders to engage with policy makers during the week. </p>
         </div>
 
         <div class="news-item">
-            <h3>News Title 2</h3>
-            <p class="date">December 4, 2023</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+            <h3>Airspace World</h3>
+            <p class="date">February 15, 2024</p>
+            <p>From 19-21 March, EUREKA will be present at the Airspace World in Geneva. The project will be hosted as part of the Aviation for Europe stand (to be confirmed) and will be included in the SESAR Walking Tour on 20 March from 14.45.-15h. </p>
         </div>
 
         <!-- Add more news items here -->
     </div>
       <!-- <div class="container" data-aos="fade-up">
-      
+
         <div class="section-title">
           <h2>News</h2>
           <p>
@@ -495,7 +632,7 @@
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
-      
+
           <div class="col-xl-2 col-md-6 d-flex align-items-stretch " data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
@@ -503,9 +640,9 @@
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
-      
+
         </div>
-      
+
       </div>
        -->
     </section><!-- End Services Section -->
@@ -513,23 +650,142 @@
     <!-- ======= Cta Section ======= -->
     <section id="newsletter" class="newsletter">
       <div class="container" data-aos="zoom-in">
-
-        <div class="newsletter">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <h4>Join Our Newsletter</h4>
-                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                <form action="" method="post">
-                  <input type="email" name="email"><input type="submit" value="Subscribe">
-                </form>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to get the latest news and updates.</p>
+            <form action="http://localhost:3000/subscribe" method="post" class="newsletter-form">
+              <div class="input-group">
+                <input type="email" name="email" class="form-control" placeholder="Enter your Email">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
-
       </div>
     </section><!-- End Cta Section -->
+
+
+<section id="events&presentations" class="events&presentations">
+  <div class="container">
+    <h2 class="my-4 text-center">Upcoming Events</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Example Event 1 -->
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Canso Drone Exhibition</h5>
+            <p class="card-text">
+              The Canso Drone Exhibition is a premier event showcasing the latest in drone technology, featuring live demonstrations, interactive displays, and expert-led workshops for enthusiasts and professionals alike.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 19-22 February 2024</small>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Airspace World</h5>
+            <p class="card-text">
+              
+              Airspace World is a comprehensive event dedicated to the future of global airspace, offering a platform for industry leaders, innovators, and regulators to discuss advancements, challenges, and solutions in air traffic management, drone integration, and aviation technology.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 19-21 March 2024</small>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Amsterdam Drone Weekend</h5>
+            <p class="card-text">
+              
+              Amsterdam Drone Weekend is an engaging festival celebrating drone technology, featuring races, workshops, and exhibitions that highlight the latest in UAV innovation, aerial photography, and recreational flying, attracting enthusiasts and professionals from across the globe.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 16-18 April 2024</small>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">EU Drone Stakeholder Meeting</h5>
+            <p class="card-text">
+              
+              
+            The EU Drone Stakeholder Meeting is a key gathering for discussing regulatory frameworks, safety standards, and the integration of drone technology within the European Union, bringing together policymakers, industry experts, and stakeholders to shape the future of UAV operations in Europe.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 17 April 2024</small>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">UNVEX</h5>
+            <p class="card-text">
+              
+              UNVEX is a leading international event focused on unmanned vehicle systems, showcasing the latest developments in UAVs, UGVs, and autonomous maritime systems, offering a comprehensive platform for professionals to explore innovations, regulatory updates, and market trends in the unmanned systems industry.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 4-6 June 2024</small>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Airpsace Integration Week</h5>
+            <p class="card-text">
+              
+              Airspace Integration Week is a pivotal conference dedicated to advancing the integration of unmanned aerial systems into national airspaces, featuring discussions on regulatory policies, technological innovations, and collaborative strategies among industry leaders, regulators, and stakeholders to ensure safe and efficient coexistence of manned and unmanned aircraft.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 25-28 September 2024</small>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card h-100 event-card">
+          <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">SESAR Innovation Days</h5>
+            <p class="card-text">
+              
+              
+            SESAR Innovation Days is an annual event focused on showcasing the latest research and developments in air traffic management and control, providing a forum for academia, industry, and air navigation service providers to present innovative concepts and solutions aimed at modernizing European airspace.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Event Date: 11-15 November 2024</small>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Example Event 2 -->
+      <!-- Add more events in similar structure -->
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
+</section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -537,7 +793,6 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -598,7 +853,6 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -624,17 +878,21 @@
             </ul>
           </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
 
-          </div>
 
           <div class="col-lg-3 col-md-6 footer-links ">
             <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
             <div class="social-links mt-3">
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
             </div>
           </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Disclaimer</h4>
+            <p>
+              Funded by the European Union under grant agreement no. 101114799. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
+            </p>
+            </div>
 
         </div>
       </div>
@@ -644,8 +902,7 @@
       <div class="copyright">
         &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
-      </div>
+
     </div>
   </footer><!-- End Footer -->
 
@@ -665,7 +922,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

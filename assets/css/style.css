@@ -1,10 +1,3 @@
-/**
-* Template Name: Arsha
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -184,7 +177,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #31A95F;
+  color: #18d26e;
 }
 
 .navbar .getstarted,
@@ -386,6 +379,54 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.news-teaser {
+  font-family: "Jost", sans-serif;
+  color: #444444;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.news-teaser h3 {
+  color: #055c27;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.news-teaser ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-teaser ul li {
+  margin-bottom: 10px;
+}
+
+.news-teaser ul li a {
+  color: #31A95F;
+  transition: color 0.3s ease-in-out;
+}
+
+.news-teaser ul li a:hover {
+  color: #73c5eb;
+}
+
+.news-teaser .btn-more-info {
+  display: inline-block;
+  background-color: #31A95F;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.news-teaser .btn-more-info:hover {
+  background-color: #43e682;
+}
+
 #hero {
   width: 100%;
   height: 80vh;
@@ -411,7 +452,7 @@ h6 {
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(252, 252, 252);
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -585,8 +626,9 @@ section {
 }
 
 .logo-carousel img {
-  max-width: 80px; /* Adjust logo size as needed */
-  margin: 0 15px; /* Adjust spacing between logos as needed */
+  max-width: 100px; /* Adjust logo size as needed */
+  max-height: 1000px;
+  margin: 0 10px; /* Adjust spacing between logos as needed */
   flex-shrink: 0;
   justify-content: center;
 }
@@ -605,80 +647,189 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about .content h3 {
+/* About Section Enhancements */
+.about {
+  padding: 60px 0;
+  background: #f7f7f7;
+}
+
+.section-title h2 {
+  color: #055c27;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.section-title p {
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.about-container {
+  align-items: center;
+}
+
+.about-img {
+  margin-bottom: 30px;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-content h3 {
   font-weight: 600;
-  font-size: 26px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #055c27;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #666;
+  font-size: 16px;
 }
 
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
+.about-highlight {
+  margin-top: 30px;
 }
 
-.about .content ul li+li {
-  margin-top: 10px;
+.about-highlight img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #31A95F;
-  line-height: 1;
+/* About Section General Styles */
+.about.section-bg {
+  background-color: #f8f9fa; /* Adjust to match your section background */
+  padding: 60px 0; /* Spacing around the section */
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+/* Accordion Styles */
+#solutions-details .accordion-item {
+  border: none; /* Removes default borders */
+  background-color: transparent; /* Ensures accordion background matches the section */
+  margin-bottom: 1rem; /* Spacing between accordion items */
 }
 
-.about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
+#solutions-details .accordion-button {
+  background-color: #055c27; /* Primary color for the button */
+  color: white; /* Text color */
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem; /* Adjust font size as needed */
+  border: none; /* Removes border */
+}
+
+#solutions-details .accordion-button:focus {
+  box-shadow: none; /* Removes focus outline */
+}
+
+#solutions-details .accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #055c27; /* Darker shade when expanded */
+}
+
+#solutions-details .accordion-body {
+  font-size: 1rem; /* Text size within accordion body */
+  color: #495057; /* Text color, adjust based on your design */
+}
+
+/* Adjustments for images and content within the accordion for responsiveness and alignment */
+#solutions-details .accordion-body .row .col-lg-6 {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
+
+#solutions-details .accordion-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adds rounded corners to images */
+}
+
+/* Ensure the 'Read More' link aligns with your site's design */
+.about-read-more {
   display: inline-block;
-  padding: 12px 32px;
-  border-radius: 4px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #31A95F;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #31A95F;
+  background-color: #066b2d; /* Button background */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 5px; /* Button border radius */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.about .content .btn-learn-more:hover {
-  background: #31A95F;
-  color: #fff;
-  text-decoration: none;
+.about-read-more:hover {
+  background-color: #066b2d; /* Darker shade on hover */
+  text-decoration: none; /* Removes underline on hover */
+  color: white; /* Maintains text color on hover */
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Adjust the gap between grid items as needed */
+/* Global section padding */
+section {
+  padding: 60px 0;
 }
 
-.grid-item {
-  border: 1px solid #ccc; /* Add borders or styling as desired */
-  padding: 20px;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}.horizontal-scroll-section .container {
+    overflow: hidden;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.4;
+.scroll-container {
+    position: relative;
+    overflow: hidden;
 }
+
+.scroll-content {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.content-item {
+    flex: 0 0 auto;
+    width: 100%; /* Adjust based on your layout */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+    
+}
+
+.next-btn {
+    right: 0;
+}
+
 
 /* .whatiseureka {
 
@@ -829,11 +980,11 @@ p {
 }
 .logo-container {
   width: 100%;
-  overflow: hidden;
+  overflow:visible;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px;
   padding-left: 40px;
   padding-right: 40px;
   justify-content: center;
@@ -843,8 +994,8 @@ p {
   backdrop-filter: blur(100px);
 }
 .logo {
-  max-width: 40px; /* Adjust logo size as needed */
-  max-height: 40px;
+  max-width: 80px; /* Adjust logo size as needed */
+  max-height: 80px;
   margin: 0 15px; /* Adjust spacing between logos as needed */
   flex-shrink: 0;
   justify-content: center;  transition: transform 0.3s ease;
@@ -852,6 +1003,14 @@ p {
 .logo:hover {
   transform: scale(1.3); /* Scales the logo by 10% on hover */
   cursor: pointer;
+}
+
+.sesar-logo {
+  max-width: 60px; /* Adjust logo size as needed */
+  max-height: 60px;
+  margin: 0px 5px 0px 30px; /* Adjust spacing between logos as needed */
+  flex-shrink: 0;
+  justify-content: center;  transition: transform 0.3s ease;
 }
 /*--------------------------------------------------------------
 # advisory-board
@@ -1001,7 +1160,7 @@ p {
 #solution-btn{
   color: #31A95F;
   /* background-color: #066b2d; */
-} */
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -1020,7 +1179,6 @@ p {
   color: white; /* Button text color */
   background-color: transparent;
   border: none;
-  font-weight: bold;
 }
 
 #solution-btn:hover {
@@ -1488,67 +1646,72 @@ p {
 /*-------------------------------------------------------------
 # Newsletter
 --------------------------------------------------------------*/
-section #newsletter {
-  padding: 60px 0;
-  background-image: url("../img/eureka-specific/VOLO_VOLOCITY TRANSPARENT THREE QUARTER FRONT.png");
-}
+
+/* Newsletter Section Enhancements */
 #newsletter {
-  font-size: 14px;
-  background-image: url("../img/eureka-specific/VOLO_VOLOCITY TRANSPARENT THREE QUARTER FRONT.png");
-}
-
-#newsletter .newsletter {
-  padding: 50px 0;
-  background: #f3f5fa;
+background: linear-gradient(#066b2d, #2a4b37);
+  color: #ffffff;
+  padding: 60px 0;
   text-align: center;
-  font-size: 15px;
-  color: #444444;
 }
 
-#newsletter .newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  color: #066b2d;
-}
-
-#newsletter .newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-
-#newsletter .newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#newsletter .newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #31A95F;
+#newsletter h4 {
   color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
-#newsletter .newsletter form input[type=submit]:hover {
-  background: #18d26e;
+#newsletter p {
+  color: #ddd;
+  margin-bottom: 30px;
 }
+.newsletter-form .input-group {
+  display: flex; /* Ensures elements are side-by-side */
+  align-items: stretch; /* Aligns items vertically */
+}
+
+.newsletter-form input[type="email"] {
+  flex-grow: 1; /* Allows input to take available space */
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+.newsletter-form button {
+  position: absolute;
+  right: 0;
+  border: 0;
+  background-color: #31A95F;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 0 20px 20px 0;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevents text wrapping */
+
+}
+
+.newsletter-form button:hover {
+  background-color: #18d26e;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments  */
+ @media (max-width: 768px) {
+  .newsletter-form .input-group {
+    flex-direction: column; /* Stacks elements vertically on smaller screens */
+  }
+    .newsletter-form button {
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .newsletter-form button {
+    top: 10px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1687,3 +1850,4 @@ section #newsletter {
     padding-top: 4px;
   }
 }
+
