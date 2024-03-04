@@ -254,7 +254,7 @@ h6 {
   visibility: visible;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 166px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -379,18 +379,28 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Increase bottom margin of the headline container */
+#hero .d-flex.flex-column.justify-content-center {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+/* Or, alternatively, increase top margin of the news teaser and key messages container */
+#hero .news-teaser, #hero .key-messages {
+  margin-left: 20px; /* Adjust the value as needed */
+}
+
 .news-teaser {
   font-family: "Jost", sans-serif;
   color: #444444;
-  background: #f7f7f7;
+  background: #f7f7f700;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
 .news-teaser h3 {
-  color: #055c27;
+  color: #f8f8f8;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -402,15 +412,17 @@ h6 {
 
 .news-teaser ul li {
   margin-bottom: 10px;
+  color: #f4f4f4;
+
 }
 
 .news-teaser ul li a {
-  color: #31A95F;
+  color: #f4f4f4;
   transition: color 0.3s ease-in-out;
 }
 
 .news-teaser ul li a:hover {
-  color: #73c5eb;
+  color: #18d26e;
 }
 
 .news-teaser .btn-more-info {
@@ -441,7 +453,16 @@ h6 {
 
 #hero .container {
   padding-top: 72px;
+  padding-right: 30px; /* Adjust right padding as needed */
+  padding-left: 30px; /* Adjust left padding as needed */
 }
+/* @media (max-width: 768px) {
+  #hero .container {
+    padding-right: 15px; /* Reduced padding for smaller screens */
+    padding-left: 15px; /* Reduced padding for smaller screens */
+  }
+} */
+
 
 #hero h1 {
   margin: 0 0 10px 0;
@@ -454,7 +475,7 @@ h6 {
 #hero h2 {
   color: rgb(252, 252, 252);
   margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 44px;
 }
 
 #hero .btn-get-started {
@@ -562,7 +583,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 0px 0;
   overflow: hidden;
 }
 
