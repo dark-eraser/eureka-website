@@ -392,22 +392,27 @@ h6 {
 .news-teaser {
   font-family: "Jost", sans-serif;
   color: #444444;
-  background: #f7f7f700;
+  background: #3b383880;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+
 }
 
 .news-teaser h3 {
-  color: #f8f8f8;
+  color: #31A95F;
   font-size: 24px;
   margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
 }
 
 .news-teaser ul {
   list-style: none;
   padding: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
 }
 
 .news-teaser ul li {
@@ -443,7 +448,7 @@ h6 {
   width: 100%;
   height: 80vh;
   background-image: url("../img/eureka-specific/BLUE_vp_Medbeta.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
+  background-color: #cccccc85; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -453,16 +458,22 @@ h6 {
 
 #hero .container {
   padding-top: 72px;
-  padding-right: 30px; /* Adjust right padding as needed */
-  padding-left: 30px; /* Adjust left padding as needed */
+  padding-right: 10px; /* Adjust right padding as needed */
+  padding-left: 10px; /* Adjust left padding as needed */
 }
-/* @media (max-width: 768px) {
-  #hero .container {
-    padding-right: 15px; /* Reduced padding for smaller screens */
-    padding-left: 15px; /* Reduced padding for smaller screens */
-  }
-} */
 
+.hero-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; /* Adjust as needed for alignment */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .hero-section-content {
+    flex-direction: column;
+  }
+}
 
 #hero h1 {
   margin: 0 0 10px 0;
@@ -496,27 +507,6 @@ h6 {
   background: #43e682;
 }
 
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
-  color: #fff;
-  line-height: 1;
-}
-
-#hero .btn-watch-video i {
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
-}
-
-#hero .btn-watch-video:hover i {
-  color: #31A95F;
-}
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -632,6 +622,16 @@ section {
   margin-bottom: 0;
 }
 
+.slogan h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #066b2d;
+  position: relative;
+  text-decoration:double;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+
+}
 
 .logo-carousel-container {
   width: 100%;
