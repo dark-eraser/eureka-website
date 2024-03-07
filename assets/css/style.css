@@ -446,10 +446,9 @@ h6 {
 
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 450px;
   background-image: url("../img/eureka-specific/BLUE_vp_Medbeta.jpg");
   background-color: #cccccc85; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -1027,7 +1026,7 @@ section {
 }
 
 .sesar-logo {
-  max-width: 60px; /* Adjust logo size as needed */
+  max-width: 110px; /* Adjust logo size as needed */
   max-height: 60px;
   margin: 0px 5px 0px 30px; /* Adjust spacing between logos as needed */
   flex-shrink: 0;
@@ -1038,7 +1037,6 @@ section {
 --------------------------------------------------------------*/
 .advisory-board {
   width: 100%;
-  height: 80vh;
   background-image: url("../img/eureka-specific/INDRA.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */

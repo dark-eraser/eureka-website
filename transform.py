@@ -50,8 +50,8 @@ def normalize_and_pad_logos(input_dir, output_dir, target_width, target_height, 
         resize_and_pad_logo(input_path, output_path, target_width, target_height, background_color)
 
 # Specify the input and output directories
-input_dir = 'img/partners'  # Update this path
-output_dir = 'img/new_partners'   # Update this path
+input_dir = 'assets/img/partnerss'  # Update this path
+output_dir = 'assets/img/new_partners'   # Update this path
 
 # Target dimensions and background color
 target_width = 1000
