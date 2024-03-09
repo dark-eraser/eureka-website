@@ -3,7 +3,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "handil-pro", sans-serif;
   color: #444444;
 }
 
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "handil-pro", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -385,12 +385,18 @@ h6 {
 }
 
 /* Or, alternatively, increase top margin of the news teaser and key messages container */
-#hero .news-teaser, #hero .key-messages {
+#hero .news-teaser, #hero {
   margin-left: 20px; /* Adjust the value as needed */
 }
-
+.news-teaser-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin-right: 0; /* Adjust to align it to the right */
+  margin-left: 200px;
+}
 .news-teaser {
-  font-family: "Jost", sans-serif;
+  font-family: "handil-pro", sans-serif;
   color: #444444;
   background: #3b383880;
   padding: 20px;
@@ -401,17 +407,17 @@ h6 {
 }
 
 .news-teaser h3 {
-  color: #31A95F;
+  color: #e8edf5;
   font-size: 24px;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 25px;
+  /* text-shadow: 2px 2px 4px rgba(0,0,0,0.5); */
 
 }
 
 .news-teaser ul {
   list-style: none;
   padding: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.5); */
 
 }
 
@@ -443,6 +449,41 @@ h6 {
 .news-teaser .btn-more-info:hover {
   background-color: #43e682;
 }
+
+.key-messages-section {
+  padding: 60px 0; /* Adjust the padding as necessary */
+  background-color: #f7f7f7; /* A light background color for the section */
+  background-size: cover;
+  background-position: center;
+}
+
+.key-messages-section h2 {
+  margin-bottom: 30px; /* Space between the heading and the list */
+  text-transform: uppercase;
+  font-size: 32px;
+    color: #055c27; /* Adjust the color as necessary */
+}
+
+.key-messages-list {
+  padding-inline-start: 0; /* Removes the default padding */
+  list-style: none; /* Removes the default list style */
+  background-color: #055c2674; /* Background color for the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the box */
+  max-width: 600px; /* Maximum width of the box */
+  margin: auto; /* Center the box horizontally */
+}
+
+.key-messages-list li {
+  font-size: 18px; /* Adjust the font size as necessary */
+  color: #555; /* Adjust the text color as necessary */
+  margin-bottom: 15px; /* Space between list items */
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+
+
 
 #hero {
   width: 100%;
@@ -489,7 +530,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Jost", sans-serif;
+  font-family: "handil-pro", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -922,7 +963,7 @@ section {
 .partners .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "handil-pro", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1048,7 +1089,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   color: #066b2d;
-  font-family: "Poppins", sans-serif;
+  font-family: "handil-pro", sans-serif;
 }
 
 .advisory-board .content ul {
@@ -1083,7 +1124,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "handil-pro", sans-serif;
   color: #066b2d;
 }
 
@@ -1240,7 +1281,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
+  font-family: "handil-pro", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1291,7 +1332,7 @@ section {
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "handil-pro", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1762,7 +1803,7 @@ background: linear-gradient(#066b2d, #2a4b37);
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "handil-pro", sans-serif;
   color: #5e5e5e;
 }
 

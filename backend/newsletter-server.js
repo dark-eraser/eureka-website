@@ -48,11 +48,13 @@ app.post('/subscribe',
 
     let email = new Email({ email: req.body.email });
     email.save()
-      .then(() => res.send('Thank you for subscribing!'))
-      .catch(err => {
-        logger.error('Error: Could not add to the newsletter list.', err);
-        res.status(500).send('Error: Could not add to the newsletter list.');
-      });
+    .then(() => res.send('Thank you for subscribing!'))
+    .catch(err => {
+      logger.error('Error: Could not add to the newsletter list.', err);
+      console.error(err); // This line will print the error details to the console
+      res.status(500).send('Error: Could not add to the newsletter list.');
+    });
+  
 });
 
 const port = process.env.PORT || 3000;
