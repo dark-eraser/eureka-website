@@ -458,7 +458,7 @@ h6 {
 }
 
 .key-messages-section h2 {
-  margin-bottom: 30px; /* Space between the heading and the list */
+  margin-bottom: 10px; /* Space between the heading and the list */
   text-transform: uppercase;
   font-size: 32px;
     color: #055c27; /* Adjust the color as necessary */
@@ -476,8 +476,8 @@ h6 {
 }
 
 .key-messages-list li {
-  font-size: 18px; /* Adjust the font size as necessary */
-  color: #555; /* Adjust the text color as necessary */
+  font-size: 22px; /* Adjust the font size as necessary */
+  color: #333; /* Adjust the text color as necessary */
   margin-bottom: 15px; /* Space between list items */
   line-height: 1.6; /* Adjust line height for better readability */
 }
