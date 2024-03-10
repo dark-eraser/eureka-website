@@ -702,6 +702,55 @@ section {
   }
 }
 
+/* Section key-facts */
+
+.factsheet-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #055c2693; /* Your color preference */
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.factsheet-header {
+  background-color: #055c27; /* A darker shade for the header */
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.factsheet-body {
+  padding: 20px;
+}
+
+.fact-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fact-label {
+  font-weight: bold;
+}
+
+.fact-value {
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fact-item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .fact-value {
+    text-align: start;
+    padding-top: 5px;
+  }
+}
 
 
 
@@ -747,7 +796,11 @@ section {
 }
 
 .about-content p {
+  text-align: center; /* Ensure text is centered */
+  align-self: center;
+  align-items: center;
   margin-bottom: 20px;
+  align-content: center;
   line-height: 1.6;
   color: #666;
   font-size: 16px;
