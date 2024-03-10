@@ -749,10 +749,10 @@ section {
 
 /* Section key-facts */
 
-.factsheet-container {
+/* .factsheet-container {
   max-width: 600px;
   margin: 20px auto;
-  background-color: #7BCCEA; /* Your color preference */
+  background-color: #7BCCEA;
   color: #263238;
   border-radius: 8px;
   overflow: hidden;
@@ -760,7 +760,7 @@ section {
 }
 
 .factsheet-header {
-  background-color: #CDDC39; /* A darker shade for the header */
+  background-color: #CDDC39;
   text-align: center;
   padding: 20px;
   font-size: 24px;
@@ -784,7 +784,6 @@ section {
   text-align: right;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .fact-item {
     flex-direction: column;
@@ -795,7 +794,51 @@ section {
     text-align: start;
     padding-top: 5px;
   }
+} */
+
+#key-facts {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #7BCCEA;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+#key-facts h2 {
+  color: #CDDC39; /* Using the Teal Cyan color for headings */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#key-facts ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  text-align: center;
+}
+
+#key-facts li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #263238; /* Slate Gray for text */
+}
+
+#key-facts li a {
+  color: #647D8E; /* Electric Lime for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth transition for link hover */
+}
+
+#key-facts li a:hover {
+  color: #317F7B; /* Darken link color on hover */
+}
+
+#key-facts img {
+  margin-right: 5px;
+  vertical-align: middle;
+  border-radius: 50%; /* Circular flags */
+}
+
 
 
 
