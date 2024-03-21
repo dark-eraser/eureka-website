@@ -1,11 +1,10 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'handil-pro';
   src: url('../fonts/handilpro-medium-webfont.woff2') format('woff2'),
-       url('../fonts/handilpro-medium-webfont.woff') format('woff');
+    url('../fonts/handilpro-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -135,9 +134,7 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+
 .navbar {
   padding: 0;
   text-decoration: none;
@@ -150,9 +147,11 @@ h6 {
   list-style: none;
   align-items: center;
 }
-.droppp{
+
+.droppp {
   text-decoration: none;
 }
+
 .navbar li {
   position: relative;
   text-decoration: none;
@@ -254,7 +253,8 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {  text-decoration: none;
+.navbar .dropdown ul li:hover>a {
+  text-decoration: none;
 
   color: #0D47A1;
 }
@@ -294,9 +294,7 @@ h6 {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+
 .mobile-nav-toggle {
   color: #ffffff;
   font-size: 28px;
@@ -309,7 +307,8 @@ h6 {
 .mobile-nav-toggle.bi-x {
   color: #ffffff;
 }
-.bi bi-arrow-up-short{
+
+.bi bi-arrow-up-short {
   color: #0D47A1;
 }
 
@@ -413,28 +412,29 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* Increase bottom margin of the headline container */
 #hero .d-flex.flex-column.justify-content-center {
-  margin-right: 20px; /* Adjust the value as needed */
+  margin-right: 20px;
   text-decoration: none;
 
 }
 
-/* Or, alternatively, increase top margin of the news teaser and key messages container */
-#hero .news-teaser, #hero {
-  margin-left: 20px; /* Adjust the value as needed */
+#hero .news-teaser,
+#hero {
+  margin-left: 20px;
   text-decoration: none;
 
 }
+
 .news-teaser-wrapper {
   display: flex;
   justify-content: flex-end;
-  max-width: 400px; /* Adjust the max-width as needed */
-  margin-right: 0; /* Adjust to align it to the right */
+  max-width: 400px;
+  margin-right: 0;
   margin-left: 200px;
   text-decoration: none;
 
 }
+
 .news-teaser {
   color: #ffffff;
   background: #317F7B;
@@ -453,7 +453,6 @@ h6 {
   margin-bottom: 25px;
   text-decoration: none;
 
-  /* text-shadow: 2px 2px 4px rgba(0,0,0,0.5); */
 
 }
 
@@ -461,8 +460,6 @@ h6 {
   list-style: none;
   padding: 0;
   text-decoration: none;
-
-    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.5); */
 
 }
 
@@ -504,57 +501,56 @@ h6 {
 }
 
 .key-messages-section {
-  padding: 60px 0; /* Adjust the padding as necessary */
-  background-color: #ffffff; /* A light background color for the section */
+  padding: 60px 0;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
 }
 
 
 .key-messages-list {
-  padding-inline-start: 0; /* Removes the default padding */
-  list-style: none; /* Removes the default list style */
-  background-color: #317F7B; /* Background color for the box */
-  border-radius: 10px; /* Rounded corners for the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 20px; /* Padding inside the box */
-  max-width: 600px; /* Maximum width of the box */
-  margin: auto; /* Center the box horizontally */
+  padding-inline-start: 0;
+  list-style: none;
+  background-color: #317F7B;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .key-messages-list li {
-  font-size: 22px; /* Adjust the font size as necessary */
-  color: #ffffff; /* Adjust the text color as necessary */
-  margin-bottom: 15px; /* Space between list items */
-  line-height: 1.6; /* Adjust line height for better readability */
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 
 
 
 #hero {
-  width: 103%;
+  width: 100%;
   height: 450px;
   background-image: url("../img/eureka-specific/BLUE_vp_Medbeta.jpg");
-  background-color: #317F7B; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #317F7B;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 #hero .container {
   padding-top: 72px;
-  padding-right: 10px; /* Adjust right padding as needed */
+  padding-right: 10px;
 }
 
 .hero-section-content {
   display: flex;
   justify-content: space-between;
-  align-items: start; /* Adjust as needed for alignment */
+  align-items: start;
 }
 
-/* Ensure responsiveness */
 @media (max-width: 1068px) {
   .hero-section-content {
     flex-direction: column;
@@ -707,13 +703,13 @@ section {
   margin-bottom: 0;
 }
 
-.slogan h2{
+.slogan h2 {
   font-size: 20px;
   font-weight: 500;
   color: #317F7B;
   position: relative;
-  text-decoration:double;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-decoration: double;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 
 }
@@ -728,73 +724,27 @@ section {
   display: flex;
   white-space: nowrap;
   position: relative;
-  animation: scroll 20s linear infinite; /* Adjust the duration to control scrolling speed */
+  animation: scroll 20s linear infinite;
 }
 
 .logo-carousel img {
-  max-width: 100px; /* Adjust logo size as needed */
+  max-width: 100px;
   max-height: 1000px;
-  margin: 0 10px; /* Adjust spacing between logos as needed */
+  margin: 0 10px;
   flex-shrink: 0;
   justify-content: center;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%); /* Adjust to -50% for the doubled content */
+    transform: translateX(-50%);
   }
 }
 
-/* Section key-facts */
-
-/* .factsheet-container {
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #317F7B;
-  color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.factsheet-header {
-  background-color: #0D47A1;
-  text-align: center;
-  padding: 20px;
-  font-size: 24px;
-}
-
-.factsheet-body {
-  padding: 20px;
-}
-
-.fact-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.fact-label {
-  font-weight: bold;
-}
-
-.fact-value {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .fact-item {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .fact-value {
-    text-align: start;
-    padding-top: 5px;
-  }
-} */
 
 #key-facts {
   max-width: 800px;
@@ -806,13 +756,13 @@ section {
 }
 
 #key-facts h2 {
-  color: #0D47A1; /* Using the Teal Cyan color for headings */
+  color: #0D47A1;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 #key-facts ul {
-  list-style-type: none; /* Remove default list styling */
+  list-style-type: none;
   padding: 0;
   text-align: center;
 }
@@ -820,23 +770,23 @@ section {
 #key-facts li {
   margin-bottom: 10px;
   line-height: 1.6;
-  color: #ffffff; /* Slate Gray for text */
+  color: #ffffff;
 }
 
 #key-facts li a {
-  color: #ffffff; /* Electric Lime for links */
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s ease; /* Smooth transition for link hover */
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 #key-facts li a:hover {
-  color: #317F7B; /* Darken link color on hover */
+  color: #317F7B;
 }
 
 #key-facts img {
   margin-right: 5px;
   vertical-align: middle;
-  border-radius: 50%; /* Circular flags */
+  border-radius: 50%;
 }
 
 
@@ -845,16 +795,18 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-/* About Section Enhancements */
-#about-button{  text-decoration: none;
+#about-button {
+  text-decoration: none;
   background-color: #0D47A1;
 }
+
 .about {
   text-align: center;
   padding: 60px 0;
   background: #ffffff;
 }
-.about p{
+
+.about p {
   color: #0D47A1;
 }
 
@@ -880,7 +832,7 @@ section {
 .about-img img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-content h3 {
@@ -891,7 +843,7 @@ section {
 }
 
 .about-content p {
-  text-align: center; /* Ensure text is centered */
+  text-align: center;
   align-self: center;
   align-items: center;
   margin-bottom: 20px;
@@ -909,90 +861,83 @@ section {
   max-width: 100%;
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section General Styles */
 .about.section-bg {
-  background-color: #ffffff; /* Adjust to match your section background */
-  padding: 60px 0; /* Spacing around the section */
+  background-color: #ffffff;
+  padding: 60px 0;
 }
 
-
-/* Accordion Styles */
 #solutions-details .accordion-item {
-  border: none; /* Removes default borders */
-  background-color: transparent; /* Ensures accordion background matches the section */
-  margin-bottom: 1rem; /* Spacing between accordion items */
+  border: none;
+  background-color: transparent;
+  margin-bottom: 1rem;
   color: #ffffff;
 }
 
 #solutions-details .accordion-button {
-  background-color: #317F7B; /* Primary color for the button */
+  background-color: #317F7B;
   text-align: center;
   align-items: center;
-  font-size: 1.2rem; /* Adjust font size as needed */
-  color: #ffffff; /* Text color */
-  border: none; /* Removes border */
+  font-size: 1.2rem;
+  color: #ffffff;
+  border: none;
 }
 
 #solutions-details .accordion-button:focus {
-  box-shadow: none; /* Removes focus outline */
+  box-shadow: none;
 }
 
 #solutions-details .accordion-button:not(.collapsed) {
   color: #ffffff;
-  background-color: #317F7B; /* Darker shade when expanded */
+  background-color: #317F7B;
 }
 
 #solutions-details .accordion-body {
-  font-size: 1rem; /* Text size within accordion body */
-  color: #ffffff; /* Text color, adjust based on your design */
-  background-color: #317F7B; /* Background color for the body */
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #317F7B;
   display: flex;
 }
-.accordion-body p{
+
+.accordion-body p {
   color: #ffffff;
-
 }
-
 
 #solutions-details .accordion-collapse {
-  transition: all 0.4s ease; /* Smooth closing transition */
+  transition: all 0.4s ease;
 }
-/* Adjustments for images and content within the accordion for responsiveness and alignment */
+
 #solutions-details .accordion-body .row .col-lg-6 {
-  /* display: flex; */
-  align-items: center; /* Centers content vertically */
-  justify-content: center; /* Centers content horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
 #solutions-details .accordion-body img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Adds rounded corners to images */
+  border-radius: 10px;
 }
-#solutions-details{
+
+#solutions-details {
   border-radius: 5%;
-
 }
 
-/* Ensure the 'Read More' link aligns with your site's design */
 .about-read-more {
   display: inline-block;
-  background-color: #317F7B; /* Button background */
-  padding: 10px 20px; /* Button padding */
-  border-radius: 5px; /* Button border radius */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  background-color: #317F7B;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .about-read-more:hover {
-  background-color: #317F7B; /* Darker shade on hover */
-  text-decoration: none; /* Removes underline on hover */
-  color: white; /* Maintains text color on hover */
+  background-color: #317F7B;
+  text-decoration: none;
+  color: white;
 }
 
-/* Global section padding */
 section {
   padding: 60px 0;
 }
@@ -1008,67 +953,61 @@ section {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}.horizontal-scroll-section .container {
-    overflow: hidden;
+}
+
+.horizontal-scroll-section .container {
+  overflow: hidden;
 }
 
 .scroll-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .scroll-content {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .content-item {
-    flex: 0 0 auto;
-    width: 100%; /* Adjust based on your layout */
-    padding: 20px;
-    box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .content-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
 
 .prev-btn {
-    left: 0;
-    
+  left: 0;
+
 }
 
 .next-btn {
-    right: 0;
+  right: 0;
 }
 
-
-/* .whatiseureka {
-
-  background-color: #263238263238ce;
-  padding: 60px 0;
-  overflow: hidden;
-} */
 
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .partners {
-  text-align: center; /* Center content within this container */
+  text-align: center;
   background-color: #ffffff;
 }
 
-/* Specifically target the image */
 .partners img {
   display: block;
-  margin: 0 auto; /* Center the image */
-  max-width: 100%; /* Make sure the image is responsive */
-  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .partners .content {
@@ -1185,9 +1124,10 @@ section {
     min-height: 200px;
   }
 }
+
 .logo-container {
   width: 100%;
-  overflow:visible;
+  overflow: visible;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -1196,41 +1136,44 @@ section {
   padding-right: 40px;
   justify-content: center;
 }
+
 .modal-backdrop {
-  /* background: none; */
   backdrop-filter: blur(100px);
 }
+
 .logo {
-  max-width: 80px; /* Adjust logo size as needed */
+  max-width: 80px;
   max-height: 80px;
-  margin: 0 15px; /* Adjust spacing between logos as needed */
+  margin: 0 15px;
   flex-shrink: 0;
-  justify-content: center;  transition: transform 0.3s ease;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
+
 .logo:hover {
-  transform: scale(1.3); /* Scales the logo by 10% on hover */
+  transform: scale(1.3);
   cursor: pointer;
 }
 
 .sesar-logo {
-  max-width: 110px; /* Adjust logo size as needed */
+  max-width: 110px;
   max-height: 60px;
-  margin: 0px 5px 0px 30px; /* Adjust spacing between logos as needed */
+  margin: 0px 5px 0px 30px;
   flex-shrink: 0;
-  justify-content: center;  transition: transform 0.3s ease;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
-/*--------------------------------------------------------------
-# advisory-board
---------------------------------------------------------------*/
+
 .advisory-board {
   width: 100%;
   background-image: url("../img/eureka-specific/INDRA.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .advisory-board .content h3 {
   font-weight: 700;
   font-size: 32px;
@@ -1302,9 +1245,11 @@ section {
 .news .icon-box:hover h4 a {
   color: #317F7B;
 }
-.news{
+
+.news {
   background-color: #ffffff;
 }
+
 .news-container {
   width: 80%;
   margin: auto;
@@ -1323,6 +1268,7 @@ section {
   margin-top: 0;
   color: #0D47A1;
 }
+
 .news-item p {
   margin-top: 0;
   color: #ffffff;
@@ -1332,18 +1278,10 @@ section {
   font-style: italic;
   color: #ffffff;
 }
-/* .card-header {
-  background-color: #cccccc;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-}
-#solution-btn{
-  color: #317F7B;
-  /* background-color: #317F7B; */
+
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #317F7B;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -1354,15 +1292,15 @@ section {
 .card-body {
   padding: 15px;
 }
+
 .btn-block {
   display: flex;
-  justify-content: space-between; /* Aligns content to the start and end of the button */
-  align-items: center; /* Vertically centers the text and icon */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon-span {
-  /* Optional: Adjust these to fine-tune the icon's position */
-  margin-left: 50px /* Pushes the icon to the right */
+  margin-left: 50px
 }
 
 /*--------------------------------------------------------------
@@ -1419,6 +1357,7 @@ section {
 .contact {
   background-color: #ffffff;
 }
+
 .contact .info {
   border-top: 3px solid #317F7B;
   border-bottom: 3px solid #317F7B;
@@ -1598,9 +1537,8 @@ section {
 # Newsletter
 --------------------------------------------------------------*/
 
-/* Newsletter Section Enhancements */
 #newsletter {
-background: #ffffff;
+  background: #ffffff;
   color: #0D47A1;
   padding: 60px 0;
   text-align: center;
@@ -1617,13 +1555,14 @@ background: #ffffff;
   color: #ffffff;
   margin-bottom: 30px;
 }
+
 .newsletter-form .input-group {
-  display: flex; /* Ensures elements are side-by-side */
-  align-items: stretch; /* Aligns items vertically */
+  display: flex;
+  align-items: stretch;
 }
 
 .newsletter-form input[type="email"] {
-  flex-grow: 1; /* Allows input to take available space */
+  flex-grow: 1;
   border: 0;
   padding: 10px 20px;
   border-radius: 20px 0 0 20px;
@@ -1638,7 +1577,7 @@ background: #ffffff;
   padding: 10px 25px;
   border-radius: 0 20px 20px 0;
   transition: background-color 0.3s;
-  white-space: nowrap; /* Prevents text wrapping */
+  white-space: nowrap;
 
 }
 
@@ -1647,17 +1586,17 @@ background: #ffffff;
   cursor: pointer;
 }
 
-/* Responsive Adjustments  */
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .newsletter-form .input-group {
-    flex-direction: column; /* Stacks elements vertically on smaller screens */
+    flex-direction: column;
   }
-    .newsletter-form button {
+
+  .newsletter-form button {
     width: 100%;
     border-radius: 50px;
     position: relative;
   }
-  
+
   .newsletter-form button {
     top: 10px;
   }

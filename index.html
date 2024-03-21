@@ -20,8 +20,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,23 +28,15 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
-  <!-- <div class="tagembed-container" style=" width:10%;height:10%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="127600" view-url="https://widget.tagembed.com/127600">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div> -->
-  <!-- ======= Header ======= -->
+^  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-
-      <!-- <h1 class="logo me-auto"><a href="index.html">EUREKA</a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="eureka-logo me-auto"><img src="assets/img/eureka-specific/EUREKA_logo_transparen.png"
           alt="" class="img-fluid"></a>
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -71,7 +61,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-
     </div>
   </header>
 
@@ -82,7 +71,7 @@
         <div class="col-lg-6  slogan" data-aos="fade-up" data-aos-delay="200">
           <h2>Paving the Way for Vertiports and Innovative Air Mobility</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" id="about-button"class="btn-get-started scrollto">More Information</a>
+            <a href="#about" id="about-button" class="btn-get-started scrollto">More Information</a>
           </div>
         </div>
         <div class="col-sm news-teaser-wrapper" data-aos="fade-up" data-aos-delay="200">
@@ -96,85 +85,73 @@
             <a href="#news" class="btn-more-info">More News</a>
           </div>
         </div>
-        <!-- New Section for Key Messages -->
-
       </div>
     </div>
   </section>
 
   <main id="main">
-    <!-- <div class='sk-ww-linkedin-page-post' data-embed-id='25350509'></div><script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script> -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll('a[data-target]').forEach(link => {
           link.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default anchor behavior
-            const targetId = this.getAttribute('data-target'); // Get the target ID
-            const targetElement = document.querySelector(targetId); // Select the target element
-
-            // Check if the target element is a collapse component and toggle it
+            e.preventDefault(); 
+            const targetId = this.getAttribute('data-target'); 
+            const targetElement = document.querySelector(targetId); 
             if (!targetElement.classList.contains('show')) {
               var bsCollapse = new bootstrap.Collapse(targetElement, {
                 toggle: true
               });
             }
-
             setTimeout(() => {
-              // Calculate offset position
-              const headerOffset = 450; // Change this value to match the height of your fixed header or any other required offset
+              const headerOffset = 450; 
               const elementPosition = targetElement.getBoundingClientRect().top;
               const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-              // Scroll to the offset position
               window.scrollTo({
                 top: offsetPosition,
                 behavior: 'smooth'
               });
-            }, 0); // Adjust timeout as needed, depending on the duration of your collapse transition
+            }, 0); 
           });
         });
       });
     </script>
-        <div class="row">
-          <div class=" text-center section-title">
-            <section id="key-messages" class="key-messages-section">
-              <div class="key-messages-container">
-                <!-- <div class="row"> -->
-    
-                <ul class="list-unstyled key-messages-list">
-                  <li>"Integrating sustainable practices in air mobility"</li>
-                  <li>"Advancing vertiport technology and infrastructure"</li>
-                  <li>"Collaborating for a unified air traffic management system"</li>
-                </ul>
-              </div>
-            </section>
+    <div class="row">
+      <div class=" text-center section-title">
+        <section id="key-messages" class="key-messages-section">
+          <div class="key-messages-container">
+            <ul class="list-unstyled key-messages-list">
+              <li>"Integrating sustainable practices in air mobility"</li>
+              <li>"Advancing vertiport technology and infrastructure"</li>
+              <li>"Collaborating for a unified air traffic management system"</li>
+            </ul>
           </div>
-    
-  <section id="key-facts" class="key-facts section-bg">
-    <div class="section-title">
-      <h2 >Key Facts</h2>
-    </div>
-    <div class="container">
-  
-      <ul>
-        <li><a href="#partners">35 partners</a></li>
-        <li>
-          Fast track: <span >TRL 2</span>
-          <span > ➔ </span>
-          <span >TRL 7</span>
-        </li>
-        <li>In 36 months</li>
-        <li>Total Cost: € 12.062.279,50</li>
-        <li>EU Contribution: € 6.924.045,14</li>
-        <li>3 years project</li>
-        <li>START: 06/2023, END: 06/2026</li>
-        <li>8 countries: Belgium, Germany, Italy, France, Slovenia, Estonia, Spain, Lithuania</li>
-        <li>6 timeboxed project with deliveries every 6 months</li>
-        <li>8 work packages</li>
-        <li>4 solutions</li>
-      </ul>
-    </div>
-  </section>
+        </section>
+      </div>
+
+      <section id="key-facts" class="key-facts section-bg">
+        <div class="section-title">
+          <h2>Key Facts</h2>
+        </div>
+        <div class="container">
+          <ul>
+            <li><a href="#partners">35 partners</a></li>
+            <li>
+              Fast track: <span>TRL 2</span>
+              <span> ➔ </span>
+              <span>TRL 7</span>
+            </li>
+            <li>In 36 months</li>
+            <li>Total Cost: € 12.062.279,50</li>
+            <li>EU Contribution: € 6.924.045,14</li>
+            <li>3 years project</li>
+            <li>START: 06/2023, END: 06/2026</li>
+            <li>8 countries: Belgium, Germany, Italy, France, Slovenia, Estonia, Spain, Lithuania</li>
+            <li>6 timeboxed project with deliveries every 6 months</li>
+            <li>8 work packages</li>
+            <li>4 solutions</li>
+          </ul>
+        </div>
+      </section>
 
       <!-- </div> -->
       <div class="col-sm-6 text-center section-title">
@@ -183,18 +160,15 @@
           </div>
           <h2>Our Objectives</h2>
           <ul class="list-unstyled key-messages-list">
-            <li>Enables the Innovative IAM accommodation in Europe and safe and autonomous IAM operations in all types of
+            <li>Enables the Innovative IAM accommodation in Europe and safe and autonomous IAM operations in all types
+              of
               airspace with a special focus on a key enabler for the IAM operations: the Vertiport ​
-      
             </li>
             <li>Supports the development of the U-space regulatory framework and necessary standards</li>
-      
-      
           </ul>
         </section>
       </div>
-      </div>
-
+    </div>
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about section-bg">
@@ -202,7 +176,6 @@
         <div class="section-title">
           <h2>About EUREKA</h2>
         </div>
-
         <p>The EUREKA project, distinguished as a FastTrack initiative within the SESAR programme for the Digital
           European Sky, represents a groundbreaking step forward in urban air mobility, specifically tailored to
           seamlessly integrate air taxis into the urban landscapes of Europe. Emphasizing the development of four
@@ -336,71 +309,10 @@
               </div>
             </div>
           </div>
-
-          <!-- Repeat for Solution 3 and Solution 4 with their respective content -->
-
         </div>
       </div>
     </section>
 
-    <!-- End About Section -->
-
-    <!-- ======= Why Us Section ======= -->
-  ->
-
-    <!-- ======= Advisory Board Section ======= -->
-    <!-- <section id="advisory-board" class="advisory-board">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Advisory Board</h2>
-        </div>        <!-- <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-
-            <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div> -->
-
-    <!-- </div>
-    </section> -->
 
     <!-- ======= Services Section ======= -->
     <section id="news" class="news section-bg container" data-aos="fade-up">
@@ -419,7 +331,6 @@
             hosted by MEP Jan-Christoph Oetjen and will show how drones will innovate to shape our future skies. EUREKA
             will be present with several work package leaders to engage with policy makers during the week. </p>
         </div>
-
         <div class="news-item">
           <h3>Airspace World</h3>
           <p class="date">February 15, 2024</p>
@@ -429,40 +340,7 @@
             featured in
             the U-space Walking Tour by SESAR JU on 20.3., 14.45-15h at the Aviation4Europe stand . </p>
         </div>
-
-        <!-- Add more news items here -->
       </div>
-      <!-- <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>News</h2>
-          <p>
-            This page will include regular news about project progress & activities
-            it will also include the linkedin feed
-            Publication of longer articles
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-xl-2 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-xl-2 col-md-6 d-flex align-items-stretch " data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-       -->
     </section><!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
@@ -483,12 +361,10 @@
       </div>
     </section><!-- End Cta Section -->
 
-
     <section id="events&presentations" class="events&presentations">
       <div class="container">
         <h2 class="my-4 text-center section-title">Upcoming Events</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- Example Event 1 -->
           <div class="col">
             <div class="card h-100 event-card">
               <img src="event1.jpg" class="card-img-top" alt="Event 1 Image">
@@ -504,7 +380,6 @@
                 <small class="text-muted">Event Date: 19-22 February 2024</small>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="card h-100 event-card">
@@ -512,7 +387,6 @@
               <div class="card-body">
                 <h5 class="card-title">Airspace World</h5>
                 <p class="card-text">
-
                   Airspace World is a comprehensive event dedicated to the future of global airspace, offering a
                   platform for industry leaders, innovators, and regulators to discuss advancements, challenges, and
                   solutions in air traffic management, drone integration, and aviation technology.</p>
@@ -525,7 +399,6 @@
                 <small class="text-muted">Event Date: 19-21 March 2024</small>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="card h-100 event-card">
@@ -533,7 +406,6 @@
               <div class="card-body">
                 <h5 class="card-title">Amsterdam Drone Weekend</h5>
                 <p class="card-text">
-
                   Amsterdam Drone Weekend is an engaging festival celebrating drone technology, featuring races,
                   workshops, and exhibitions that highlight the latest in UAV innovation, aerial photography, and
                   recreational flying, attracting enthusiasts and professionals from across the globe.</p>
@@ -544,7 +416,6 @@
                 <small class="text-muted">Event Date: 16-18 April 2024</small>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="card h-100 event-card">
@@ -552,8 +423,6 @@
               <div class="card-body">
                 <h5 class="card-title">EU Drone Stakeholder Meeting</h5>
                 <p class="card-text">
-
-
                   The EU Drone Stakeholder Meeting is a key gathering for discussing regulatory frameworks, safety
                   standards, and the integration of drone technology within the European Union, bringing together
                   policymakers, industry experts, and stakeholders to shape the future of UAV operations in Europe.</p>
@@ -562,7 +431,6 @@
                 <small class="text-muted">Event Date: 17 April 2024</small>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="card h-100 event-card">
@@ -570,7 +438,6 @@
               <div class="card-body">
                 <h5 class="card-title">UNVEX</h5>
                 <p class="card-text">
-
                   UNVEX is a leading international event focused on unmanned vehicle systems, showcasing the latest
                   developments in UAVs, UGVs, and autonomous maritime systems, offering a comprehensive platform for
                   professionals to explore innovations, regulatory updates, and market trends in the unmanned systems
@@ -582,7 +449,6 @@
                 <small class="text-muted">Event Date: 4-6 June 2024</small>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="card h-100 event-card">
@@ -590,7 +456,6 @@
               <div class="card-body">
                 <h5 class="card-title">Airspace Integration Week</h5>
                 <p class="card-text">
-
                   Airspace Integration Week is a pivotal conference dedicated to advancing the integration of unmanned
                   aerial systems into national airspaces, featuring discussions on regulatory policies, technological
                   innovations, and collaborative strategies among industry leaders, regulators, and stakeholders to
@@ -602,7 +467,6 @@
                 <small class="text-muted">Event Date: 25-28 September 2024</small>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="card h-100 event-card">
@@ -610,8 +474,6 @@
               <div class="card-body">
                 <h5 class="card-title">SESAR Innovation Days</h5>
                 <p class="card-text">
-
-
                   SESAR Innovation Days is an annual event focused on showcasing the latest research and developments in
                   air traffic management and control, providing a forum for academia, industry, and air navigation
                   service providers to present innovative concepts and solutions aimed at modernizing European airspace.
@@ -621,29 +483,19 @@
                 <small class="text-muted">Event Date: 11-15 November 2024</small>
               </div>
             </div>
-
           </div>
-
-          <!-- Example Event 2 -->
-          <!-- Add more events in similar structure -->
         </div>
       </div>
-
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-
     </section>
+
     <section id="partners" class="partners section-bg">
       <div class="container-fluid" data-aos="fade-up">
-
         <div class="section-title">
           <div class="row">
-            <!-- Column for the title -->
             <div class="col text-center">
               <h2>Partners</h2>
             </div>
-
-            <!-- Column for the logo -->
-
           </div>
         </div>
 
@@ -751,59 +603,16 @@
           <a href="https://www.aiv.hfoed.de/en/startseite.html" target="_blank">
             <img src="assets/img/new_partners/logo_36.jpg" alt="Logo 36" class="logo img-fluid">
           </a>
-
         </div>
-
-        <!-- <img src="assets/img/new_partners/logo_1.png" Logo 1" class="img-fluid logo"  href="https://google.com">
-          <img src="assets/img/new_partners/logo_2.png" Logo 2" class="logo img-fluid" data-bs-toggle="modal" data-logo="2"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_3.png" Logo 3" class="logo img-fluid" data-bs-toggle="modal" data-logo="3"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_4.png" Logo 4" class="logo img-fluid" data-bs-toggle="modal" data-logo="4"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_5.png" Logo 5" class="logo img-fluid" data-bs-toggle="modal" data-logo="5"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_6.jpg" Logo 6" class="logo img-fluid" data-bs-toggle="modal" data-logo="6"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_7.png" Logo 7" class="logo img-fluid" data-bs-toggle="modal" data-logo="7"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_8.png" Logo 8" class="logo img-fluid" data-bs-toggle="modal" data-logo="8"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_9.png" Logo 9" class="logo img-fluid" data-bs-toggle="modal" data-logo="9"data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_10.png" Logo 10" class="logo img-fluid" data-bs-toggle="modal" data-logo="10" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_11.png" Logo 11" class="logo img-fluid" data-bs-toggle="modal" data-logo="11" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_12.png" Logo 12" class="logo img-fluid" data-bs-toggle="modal" data-logo="12" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_13.jpg" Logo 13" class="logo img-fluid" data-bs-toggle="modal" data-logo="13" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_14.png" Logo 14" class="logo img-fluid" data-bs-toggle="modal" data-logo="14" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_15.png" Logo 15" class="logo img-fluid" data-bs-toggle="modal" data-logo="15" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_16.png" Logo 16" class="logo img-fluid" data-bs-toggle="modal" data-logo="16" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_17.jpg" Logo 17" class="logo img-fluid" data-bs-toggle="modal" data-logo="17" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_18.png" Logo 18" class="logo img-fluid" data-bs-toggle="modal" data-logo="18" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_19.png" Logo 19" class="logo img-fluid" data-bs-toggle="modal" data-logo="19" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_20.jpg" Logo 20" class="logo img-fluid" data-bs-toggle="modal" data-logo="20" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_21.png" Logo 21" class="logo img-fluid" data-bs-toggle="modal" data-logo="21" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_22.png" Logo 22" class="logo img-fluid" data-bs-toggle="modal" data-logo="22" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_23.png" Logo 23" class="logo img-fluid" data-bs-toggle="modal" data-logo="23" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_24.png" Logo 24" class="logo img-fluid" data-bs-toggle="modal" data-logo="24" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_26.png" Logo 26" class="logo img-fluid" data-bs-toggle="modal" data-logo="26" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_27.png" Logo 27" class="logo img-fluid" data-bs-toggle="modal" data-logo="27" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_28.png" Logo 28" class="logo img-fluid" data-bs-toggle="modal" data-logo="28" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_29.png" Logo 29" class="logo img-fluid" data-bs-toggle="modal" data-logo="29" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_30.png" Logo 30" class="logo img-fluid" data-bs-toggle="modal" data-logo="30" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_31.png" Logo 31" class="logo img-fluid" data-bs-toggle="modal" data-logo="31" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_33.png" Logo 33" class="logo img-fluid" data-bs-toggle="modal" data-logo="33" data-bs-target="#generalModal">
-          <img src="assets/img/new_partners/logo_34.png" Logo 34" class="logo img-fluid" data-bs-toggle="modal" data-logo="34" data-bs-target="#generalModal"> -->
-
-
-
-        <!-- <img class="partners align-items-center d-flex img-fluid" src="assets/img/eureka-specific/partnerslide.jpg" data-aos="zoom-in" data-aos-delay="150">&nbsp; -->
-        <!-- </div> -->
-
       </div>
     </section><!-- End Why Us Section -
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-
         <div class="row">
-
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
@@ -811,21 +620,12 @@
                 <h4>Location:</h4>
                 <p>Bruessels, Belgium</p>
               </div>
-
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>info@eurekaproject.eu</p>
               </div>
-
-
-<!-- 
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.59947275995!2d4.3754171!3d50.855123999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBrussels%2C%20Belgium!5e0!3m2!1sen!2sch!4v1701621465624!5m2!1sen!2sch"
-                maxwidth="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
-
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
@@ -856,19 +656,15 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>EUREKA</h3>
             <p>
@@ -877,7 +673,6 @@
               <strong>Email:</strong> info@eurekaproject.eu<br>
             </p>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -888,17 +683,13 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#events&presentations">Events & Presentations</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
             </ul>
-
           </div>
-
-
-
           <div class="col-lg-3 col-md-6 footer-links ">
             <h4>Our Social Networks</h4>
             <div class="social-links mt-3">
               <a href="https://www.linkedin.com/company/97034653/admin/feed/posts/" class="linkedin"><i
-                  class="bx bxl-linkedin"></i></a>
-
+                  class="bx bxl-linkedin"></i>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 footer-links">
@@ -909,7 +700,6 @@
               European Union nor the granting authority can be held responsible for them.
             </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -918,13 +708,13 @@
       <div class="copyright">
         &copy; Copyright <strong><span>Eureka</span></strong>. All Rights Reserved
       </div>
-
     </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -935,11 +725,12 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous">
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
